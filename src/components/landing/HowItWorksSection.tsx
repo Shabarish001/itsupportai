@@ -115,7 +115,7 @@ const HowItWorksSection = () => {
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
-                  className="glass-card p-6 md:p-8 rounded-2xl"
+                  className="bg-card border border-border p-6 md:p-8 rounded-2xl shadow-sm"
                 >
                   <div className={`flex items-center gap-4 mb-4 ${index % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
                     <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
@@ -131,7 +131,7 @@ const HowItWorksSection = () => {
                     {step.examples.map((example, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 text-sm bg-surface-elevated border border-border/50 rounded-full text-muted-foreground"
+                        className="px-3 py-1 text-sm bg-muted border border-border/50 rounded-full text-muted-foreground"
                       >
                         {example}
                       </span>
