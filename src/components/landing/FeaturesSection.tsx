@@ -81,7 +81,7 @@ const FeaturesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-muted-foreground mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-sm text-muted-foreground mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             How ITsupportAI Works
           </span>
@@ -108,7 +108,7 @@ const FeaturesSection = () => {
               variants={itemVariants}
               className="group"
             >
-              <div className="h-full glass-strong rounded-2xl p-8 transition-all duration-300 hover:border-primary/50 hover:glow-subtle">
+              <div className="h-full bg-card border border-border rounded-2xl p-8 transition-all duration-300 hover:border-primary/50 hover:shadow-lg">
                 <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-7 h-7 text-white" />
                 </div>
@@ -130,7 +130,7 @@ const FeaturesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="glass-strong rounded-2xl p-8"
+          className="bg-card border border-border rounded-2xl p-8 shadow-sm"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (

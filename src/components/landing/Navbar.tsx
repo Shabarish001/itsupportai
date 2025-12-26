@@ -20,7 +20,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 px-4 py-4"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="glass-strong rounded-2xl px-6 py-3 flex items-center justify-between">
+        <div className="bg-background/80 backdrop-blur-xl border border-border rounded-2xl px-6 py-3 flex items-center justify-between shadow-sm">
           {/* Logo */}
           <motion.a
             href="#"
@@ -80,7 +80,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden mt-2 glass-strong rounded-2xl p-4"
+              className="md:hidden mt-2 bg-background/90 backdrop-blur-xl border border-border rounded-2xl p-4 shadow-lg"
             >
               <div className="flex flex-col gap-4">
                 {navLinks.map((link) => (

@@ -49,7 +49,7 @@ const CTASection = () => {
             <Input
               type="email"
               placeholder="Your work email"
-              className="h-14 px-6 bg-secondary/50 border-border focus:border-primary transition-colors text-center sm:text-left"
+              className="h-14 px-6 bg-muted border-border focus:border-primary transition-colors text-center sm:text-left"
             />
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Button className="h-14 px-8 bg-gradient-primary hover:opacity-90 transition-opacity group whitespace-nowrap">

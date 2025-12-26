@@ -48,7 +48,7 @@ const HeroSection = () => {
           >
             {/* Badge */}
             <motion.div variants={itemVariants} className="mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-sm text-muted-foreground">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 AI-Powered IT Resolution Platform
               </span>
@@ -81,7 +81,7 @@ const HeroSection = () => {
                 <Input
                   type="email"
                   placeholder="Your work email"
-                  className="h-12 pl-4 pr-4 bg-secondary/50 border-border focus:border-primary transition-colors"
+                  className="h-12 pl-4 pr-4 bg-muted border-border focus:border-primary transition-colors"
                 />
               </div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -116,7 +116,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Main Card */}
               <motion.div
-                className="glass-strong rounded-2xl p-6 glow-subtle"
+                className="bg-card border border-border rounded-2xl p-6 shadow-lg"
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
@@ -127,10 +127,10 @@ const HeroSection = () => {
                 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center shrink-0">
                       <span className="text-xs">JD</span>
                     </div>
-                    <div className="glass rounded-xl px-4 py-3 max-w-xs">
+                    <div className="bg-muted rounded-xl px-4 py-3 max-w-xs">
                       <p className="text-sm text-muted-foreground">I forgot my password, can someone help?</p>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ const HeroSection = () => {
 
               {/* Floating Stats Card */}
               <motion.div
-                className="absolute -top-4 -right-4 glass-strong rounded-xl p-4"
+                className="absolute -top-4 -right-4 bg-card border border-border rounded-xl p-4 shadow-lg"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.4 }}
@@ -166,7 +166,7 @@ const HeroSection = () => {
 
               {/* Floating Integration Card */}
               <motion.div
-                className="absolute -bottom-4 -left-4 glass-strong rounded-xl px-4 py-3 flex items-center gap-3"
+                className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl px-4 py-3 flex items-center gap-3 shadow-lg"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 1, duration: 0.4 }}
