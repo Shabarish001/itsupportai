@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Brain } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,16 +25,11 @@ const Navbar = () => {
           {/* Logo */}
           <motion.a
             href="#"
-            className="flex items-center gap-2 group"
+            className="flex items-center group"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-primary flex items-center justify-center glow-subtle">
-              <Brain className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-lg font-semibold text-foreground">
-              ITsupportAI
-            </span>
+            <img src={logo} alt="ITsupportAI" className="h-10 w-auto" />
           </motion.a>
 
           {/* Desktop Navigation */}
