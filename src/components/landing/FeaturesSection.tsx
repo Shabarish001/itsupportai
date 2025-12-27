@@ -18,26 +18,30 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: MessageSquare,
-      title: "Ask Naturally",
-      description: "Employees describe their issue in plain language. 'I forgot my password' or 'VPN is not working' — no forms, no waiting.",
+      title: "AI IT Copilot",
+      subtitle: "Employee Interface",
+      description: "Your employees' first point of contact. They describe issues in plain language — 'I forgot my password' or 'VPN is not working' — and the AI Copilot understands, responds, and resolves.",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Brain,
-      title: "Company-Aware Intelligence",
-      description: "Uses your internal IT documentation, SOPs, and policies. Responses are accurate, secure, and company-specific — not generic AI.",
+      title: "Specialist AI Agents",
+      subtitle: "Multi-Agent Architecture",
+      description: "Behind the scenes, specialized agents handle different domains: Password Agent, Network Agent, Software Agent, and more. Each trained on your company's specific systems and policies.",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Workflow,
-      title: "Intelligent Decision Engine",
-      description: "The AI decides: guide the user, fix the issue automatically, or escalate to ITSM. No blind automation. No hallucinations.",
+      title: "Intelligent Orchestration",
+      subtitle: "Decision Engine",
+      description: "The orchestrator routes requests to the right specialist agent, combines their expertise, and decides: guide the user, fix automatically, or escalate to human IT. No blind automation.",
       gradient: "from-orange-500 to-yellow-500",
     },
     {
       icon: TicketX,
-      title: "Ticket Avoided",
-      description: "If resolved, no ticket is created. Productivity is saved. IT workload is reduced. Your team focuses on real problems.",
+      title: "Zero-Ticket Resolution",
+      subtitle: "Outcome Focused",
+      description: "When resolved, no ticket is created. Your IT team focuses on complex problems while routine issues vanish. Employees get instant help, IT gets capacity back.",
       gradient: "from-green-500 to-emerald-500",
     },
   ];
@@ -113,9 +117,12 @@ const FeaturesSection = () => {
                   <feature.icon className="w-7 h-7 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-1 text-foreground">
                   {feature.title}
                 </h3>
+                <p className="text-sm text-primary font-medium mb-3">
+                  {feature.subtitle}
+                </p>
                 
                 <p className="text-muted-foreground leading-relaxed">
                   {feature.description}
