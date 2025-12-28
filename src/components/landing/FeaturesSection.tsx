@@ -49,7 +49,7 @@ const FeaturesSection = () => {
   const benefits = [
     { icon: Shield, label: "Enterprise Security", value: "SOC 2 Compliant" },
     { icon: BarChart3, label: "Average Resolution", value: "< 30 seconds" },
-    { icon: Zap, label: "Tickets Prevented", value: "50%+" },
+    { icon: Zap, label: "Tickets Prevented", value: "20%+" },
     { icon: Users, label: "Employee Satisfaction", value: "95%" },
   ];
 

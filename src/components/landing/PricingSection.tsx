@@ -97,7 +97,7 @@ const PricingSection = () => {
                 <span className="text-xs text-muted-foreground">Employees</span>
               </div>
               <div className="text-center border-x border-border">
-                <span className="text-xl font-bold text-foreground">50%+</span>
+                <span className="text-xl font-bold text-foreground">20%+</span>
                 <p className="text-xs text-muted-foreground">Tickets Reduced</p>
               </div>
               <div className="text-center">

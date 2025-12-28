@@ -25,7 +25,7 @@ const HeroSection = () => {
   };
 
   const stats = [
-    { icon: Zap, label: "50%+ tickets prevented" },
+    { icon: Zap, label: "20%+ tickets prevented" },
     { icon: Clock, label: "Instant resolutions" },
     { icon: Shield, label: "Enterprise secure" },
   ];
@@ -69,7 +69,7 @@ const HeroSection = () => {
               variants={itemVariants}
               className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"
             >
-              ITsupportAI prevents repetitive IT tickets by solving employee issues at Level-0 — before they ever reach your help desk or ITSM.
+              ITsupportAI prevents repetitive IT tickets by solving employee issues at Level-0 before they ever reach your help desk or ITSM.
             </motion.p>
 
             {/* Email Input CTA */}

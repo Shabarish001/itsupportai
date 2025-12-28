@@ -3,24 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
     <title>Lovable App</title>
     <meta name="description" content="Lovable Generated Project" />
     <meta name="author" content="Lovable" />
 
-    <!-- TODO: Update og:title to match your application name -->
     <meta property="og:title" content="Lovable App" />
     <meta property="og:description" content="Lovable Generated Project" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="ITsupportlogo.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:image" content="ITsupportlogo.png" />
+
+    <style>
+      .lovable-logo-fallback {
+        position: fixed;
+        top: 1.5rem;
+        left: 0;
+        right: 0;
+        padding: 0 1.5rem;
+        z-index: 50;
+        pointer-events: none;
+      }
+
+      .lovable-logo-card {
+        display: flex;
+        justify-content: center;
+      }
+
+      .lovable-logo-image {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 0.75rem;
+        background: #ffffff;
+        padding: 0.25rem;
+        box-shadow: 0 0 30px hsla(270, 70%, 55%, 0.2);
+        object-fit: contain;
+      }
+
+      .lovable-logo-link {
+        pointer-events: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: transform 0.2s ease;
+      }
+
+      .lovable-logo-link:hover {
+        transform: scale(1.02);
+      }
+
+      .lovable-logo-link:active {
+        transform: scale(0.98);
+      }
+    </style>
   </head>
 
   <body>
+    <div id="lovable-logo-fallback" class="lovable-logo-fallback">
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-background/80 backdrop-blur-xl border border-border rounded-2xl px-6 py-3 shadow-sm lovable-logo-card">
+          <a href="#" class="lovable-logo-link">
+            <img src="/ITsupportlogo.png" alt="ITsupportAI logo" class="lovable-logo-image" />
+            <span class="text-lg font-semibold text-foreground">ITsupportAI</span>
+          </a>
+        </div>
+      </div>
+    </div>
     <div id="root"></div>
+    <script>
+      window.addEventListener("load", () => {
+        const fallback = document.getElementById("lovable-logo-fallback");
+        fallback?.remove();
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
