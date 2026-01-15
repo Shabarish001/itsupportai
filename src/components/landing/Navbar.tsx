@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Brain } from "lucide-react";
@@ -53,8 +54,8 @@ const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-              Log In
+            <Button asChild variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+              <Link to="/login">Log In</Link>
             </Button>
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Button size="sm" className="bg-gradient-primary hover:opacity-90 transition-opacity">
@@ -94,8 +95,10 @@ const Navbar = () => {
                   </a>
                 ))}
                 <hr className="border-border" />
-                <Button variant="ghost" size="sm" className="justify-start text-muted-foreground">
-                  Log In
+                <Button asChild variant="ghost" size="sm" className="justify-start text-muted-foreground">
+                  <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+                    Log In
+                  </Link>
                 </Button>
                 <Button size="sm" className="bg-gradient-primary">
                   Request Access

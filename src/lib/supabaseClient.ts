@@ -1,0 +1,15 @@
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey =
+  import.meta.env.VITE_SUPABASE_ANON_KEY ??
+  import.meta.env.VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  // Surface a helpful error early instead of failing silently when env vars are missing.
+  throw new Error(
+    "Missing Supabase credentials. Check VITE_SUPABASE_URL plus VITE_SUPABASE_ANON_KEY or VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY.",
+  );
+}
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
